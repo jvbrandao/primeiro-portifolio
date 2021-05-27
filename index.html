@@ -25,24 +25,28 @@
             <span>fechar</span>
         </div>
 
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="img/bg.jpg" alt="">
             </div>
             <div class="banner">
                 <h1>Web Developer</h1>
                 <p>João Victor Brandão</p>
-                <button>Saiba mais</button>
+                <a href="#conhecimentos"><button>Saiba mais</button></a>
+                <p class="sobre-mim">Sou engenheiro front end web e cursando ciência da computação, tenho habilidade em soluções de
+                    problemas, autodidata e aprendo rápido. Bom em liderança e trabalhos em grupo e sempre a procura
+                    de novos conhecimentos e técnicas.
+                </p>
             </div>
         </header>
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contatos" class="menu-link">Contato</a></li>
+
                 </ul>
             </nav>
             <div class="social-media">
@@ -51,7 +55,7 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </aside>
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -134,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1>Projetos</h1>
             </div>
@@ -176,7 +180,7 @@
                 </div>
             </div>
         </section>
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contatos">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -200,6 +204,23 @@
             </div>
         </section>
     </div>
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2021, João Brandão - Todos os Direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </body>
 
 <script src="script.js"></script>
