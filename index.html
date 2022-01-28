@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -12,50 +12,53 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+
     <title>Portfólio</title>
 
 </head>
 
 <body>
     <div class="container">
+
         <div class="hamburger">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
             <span>fechar</span>
         </div>
+        <div class="pagina-inicial">
+            <header id="home">
+                <div class="img-wrapper">
+                    <img src="img/bg.jpg" alt="">
+                </div>
+                <div class="banner">
+                    <h1>Desenvolvedor Web,</h1>
+                    <h1>Desenvolvedor RPA</h1>
+                    <p>João Victor Brandão</p>
+                    <a href="#conhecimentos"><button>Saiba mais</button></a>
 
-        <header id="home">
-            <div class="img-wrapper">
-                <img src="img/bg.jpg" alt="">
-            </div>
-            <div class="banner">
-                <h1>Web Developer</h1>
-                <p>João Victor Brandão</p>
-                <a href="#conhecimentos"><button>Saiba mais</button></a>
-                <p class="sobre-mim">Sou engenheiro front end web e cursando ciência da computação, tenho habilidade em soluções de
-                    problemas, autodidata e aprendo rápido. Bom em liderança e trabalhos em grupo e sempre a procura
-                    de novos conhecimentos e técnicas.
-                </p>
-            </div>
-        </header>
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#contatos" class="menu-link">Contato</a></li>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                        <li class="menu-item"><a href="#sobre-mim" class="menu-link">Sobre Mim</a></li>
+                        <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#contatos" class="menu-link">Contato</a></li>
 
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </aside>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a href="https://github.com/jvbrandao" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/jv.brandao/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </aside>
+        </div>
         <section class="sessao-conhecimentos" id="conhecimentos">
+
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -97,14 +100,12 @@
                 </div>
                 <div class="conhecimento">
                     <div class="conhecimento-header">
-                        <i class="fas fa-atom"></i>
-                        <h3>React Native</h3>
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>O React Native é um framework baseado no já aclamado React, desenvolvido pela equipe do
-                            Facebook,
-                            que possibilita o desenvolvimento de aplicações mobile, tanto para Android, como para iOS,
-                            utilizando apenas Javascript.</p>
+                        <p>Python é uma linguagem de programação de alto nível, interpretada de script, imperativa,
+                            orientada a objetos, funcional, de tipagem dinâmica e forte.</p>
                     </div>
                 </div>
                 <div class="conhecimento">
@@ -124,18 +125,35 @@
                 </div>
                 <div class="conhecimento">
                     <div class="conhecimento-header">
-                        <i class="fab fa-github"></i>
-                        <h3>Git e Github</h3>
+                        <i class="fas fa-check"></i>
+                        <h3>Selenium</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>O GitHub é um site que abriga um software de controle de versão de desenvolvimento através do
-                            sistema Git. Trata-se de um sistema que possibilita trabalhos em colaboração com outros
-                            desenvolvedores</p>
+                        <p>Selenium é um conjunto de ferramentas de código aberto multiplataforma, usado para testar
+                            aplicações web pelo browser de forma automatizada.
+                        </p>
                     </div>
                 </div>
                 <div class="conhecimento-img-wrapper">
-                    <img src="img/conhecimentos.png" alt="imagem conhecimento">
+                    <img src="img/cerebro.png" alt="imagem conhecimento">
                 </div>
+            </div>
+        </section>
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="sessao-header">
+                <h1>Sobre mim</h1>
+            </div>
+            <div class="sobre-conteudo">
+                <h3>Sou engenheiro front end web e cursando ciência da computação, tenho habilidade em soluções de
+                    problemas, muito dedicado, autodidata e aprendo rápido. Sou bom em liderança e trabalho em grupo e
+                    sempre a procura de novos conhecimentos e técnicas
+                </h3>
+            </div>
+            <div class="curriculo">
+                <a href="./curriculo/CurriculoPt.pdf" download="CurriculoPt.pdf" target="_blank"><button
+                        class="btn">Currículo</button></a>
+                <a href="./curriculo/CurriculoEn.pdf" download="CurriculoEn.pdf" target="_blank"><button
+                        class="btn">Resume</button></a>
             </div>
         </section>
         <section class="sessao-projetos" id="projetos">
@@ -151,7 +169,9 @@
                         <h2>Site Mais Cidadão</h2>
                         <h3>HTML5, CSS3, JS</h3>
                         <p>conversor de valores, calcular seus juros, financiamento, valores futuros, e muito mais.</p>
-                        <button class="btn">Saiba Mais</button>
+                        <a href="https://www.maiscidadao.space" target="_blank"><button class="btn">Saiba
+                                mais</button></a>
+
                     </div>
                 </div>
                 <div class="card">
@@ -163,19 +183,34 @@
                         <h2>App Mais Cidadão</h2>
                         <h3>React Native</h3>
                         <p>conversor de valores, calcular seus juros, financiamento, valores futuros, e muito mais.</p>
-                        <button class="btn">Saiba Mais</button>
+                        <a href="./AppMC.html" target="_blank"><button class="btn">Saiba mais</button></a>
                     </div>
                 </div>
                 <div class="card">
 
                     <div class="card-img-wrapper">
-                        <img src="img/SiteCatRush/print4.png" alt="Imagens do projeto catálogo rush">
+                        <img src="img/DarkPanda.png" alt="Imagens do projeto catálogo rush">
                     </div>
                     <div class="card-info">
-                        <h2>Catálogo Rush Store</h2>
+                        <h2>Catálogo Dark Panda</h2>
                         <h3>HTML5, CSS3, JS, WordPress</h3>
-                        <p>Catálogo para a loja Rush Store</p>
-                        <button class="btn">Saiba Mais</button>
+                        <p>Catálogo para a loja Dark Panda</p>
+                        <a href="https://darkpanda.site/" target="_blank"><button class="btn">Saiba mais</button></a>
+
+                    </div>
+                </div>
+                <div class="card">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/Sale/capa_sale.png" alt="Imagens do projeto catálogo rush">
+                    </div>
+                    <div class="card-info">
+                        <h2>Automação (RPA)</h2>
+                        <br>
+                        <h3>Python, Selenium</h3>
+                        <p>Automação para a emrpesa Sale Automatic Machines</p>
+                        <a href="./RPA_sale.html" target="_blank"><button class="btn">Saiba mais</button></a>
+
                     </div>
                 </div>
             </div>
@@ -184,22 +219,11 @@
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
-                    <h1>Contato</h1>
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            <label for="nome" class="field-label">Nome</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">Email</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
-                        </div>
-                        <button type="submit" class="btn btn-submit">Enviar</button>
-                    </form>
+                    <h1>Contatos</h1>
+                    <h3>E-mail: jv.brandao@hotmail.com</h3>
+                    <h3>Telefone: +55 17 99141-1383</h3>
+                    <h3>Instagram: jv.brandao</h3>
+
                 </div>
             </div>
         </section>
@@ -211,9 +235,11 @@
             </p>
             <div class="social-list">
                 <ul>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+
+                    <li><a href="https://www.instagram.com/jv.brandao/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5517991411383" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -224,5 +250,6 @@
 </body>
 
 <script src="script.js"></script>
+
 
 </html>

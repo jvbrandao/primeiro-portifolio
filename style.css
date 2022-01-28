@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;1,400;1,500&display=swap');
 
 *{
     margin:0;
@@ -10,13 +11,16 @@
 }
 
 :root{
-    --font-primary: "Baloo Da 2", serif;
+    --font-primary: "Roboto Mono", serif;
     --font-secundary: "Josefin Slab", serif;
     --font-action: "Mulish", serif;
 }
 html{
     scroll-behavior: smooth;
 }
+
+
+
 .hamburger{
    /* background-color: red;*/
     width: 2rem;
@@ -41,10 +45,7 @@ html{
     box-shadow: 0.1rem 0.1rem 1px #000;
     transition: transform 1s; 
 }
-.sobre-mim{
-    margin-top: 5rem;
-    width: 40rem;
-}
+
 
 .show-menu #line1{
     transform: rotate(45deg) translate(.3rem, .45rem);
@@ -268,9 +269,10 @@ header{
 
 .sessao-conhecimentos{
     background-color: #f5f5f5;
-    height: 85vh;
+    height: 95vh;
 
 }
+
 
 .sessao-header{
     display: flex;
@@ -318,10 +320,32 @@ header{
     object-fit: cover;
     width: 100%;
 }
+.sobre-mim{
+    text-align: center;
+
+}
+.sobre-conteudo{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+
+.sobre-mim h3{
+    color:#000;
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    font-weight: 300;
+    text-shadow: .1rem .1rem 1px rgba(0,0,0, .4);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    width: 50rem;
+
+}
 
 .projetos{
     display: flex;
     justify-content: space-evenly; 
+    height: 100%;
 }
 
 .card{
@@ -397,6 +421,18 @@ header{
    
 
 }
+.curriculo button{
+    width: 10rem;
+    height: 2.9rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+
+}
+.curriculo button:hover{
+    cursor: pointer;
+
+}
+
 .card:hover .card-info{
     bottom: 2rem;
     opacity: 1;
@@ -414,7 +450,7 @@ header{
 
 .contato-wrapper{
     width:60%;
-    height:30rem;
+    height:20rem;
     display: flex;
     box-shadow: 0 2rem 3rem rgba(0,0,0,0.5)
 
@@ -439,9 +475,13 @@ header{
     font-weight: lighter;
 }
 
-.sessao-contato form{
+.sessao-contato h3{
     width: 100%;
     display: flex;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 1.5rem;
+    font-weight: lighter;
     flex-direction: column;
     align-items: center;
 }
@@ -540,4 +580,252 @@ footer{
     color: #fff;
     border-radius: .5rem;
     box-shadow: 0 0 .1rem 0.6rem #00000009;
+}
+
+.pagina-AppMC{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.divMC{
+    justify-items: center;
+    align-items: center;
+
+}
+.MCfotos{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.video_sale{
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.Print{
+    height:35rem;
+    margin: 1rem;
+}
+.Aplicativo button{
+    width: 14rem;
+    height: 2.9rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+
+}
+.Aplicativo button:hover{
+    cursor: pointer;
+
+}
+@media (max-width: 1200px){
+    body{
+        min-height:100vh;
+        min-width: 100vw;
+    }
+    .pagina-inicial{
+        min-height:100vh;
+        min-width: 100vw;
+    }
+    .hamburger{
+        /* background-color: red;*/
+         width: 2rem;
+         height: 2rem;
+         position: fixed;
+         z-index: 151;
+
+         top: 2rem;
+         display:flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         cursor: pointer;
+     }
+     .show-menu .hamburger{
+         right:10rem;
+     }
+     .sidebar{
+        width: 20rem;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -20rem;
+        transition: all 1s;
+        z-index:150;
+    }
+    
+    .menu{
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%, -50%)
+    }
+    
+    
+    .banner{
+        position:absolute;
+        top:30%;
+        left:2%;
+    }
+    .banner h1{
+
+        font-size: 3rem;
+        
+    }
+    .conhecimentos{
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(11, 6rem);
+        row-gap: .5rem;
+    }
+    .sessao-conhecimentos{
+        background-color: #f5f5f5;
+        height: 100%;
+        padding-left: .3rem;
+    
+    }
+    .conhecimento-img-wrapper{
+        display: none;
+    }
+    
+    .conhecimento:nth-child(1){
+        grid-column: 1 / 16;
+        grid-row: 1 / 2;
+    }
+    
+    .conhecimento:nth-child(2){
+        grid-column: 1 / 16;
+        grid-row: 3 / 4;
+    }
+    
+    .conhecimento:nth-child(3){
+        grid-column: 1 / 16;
+
+        grid-row: 5 / 6;
+    }
+    
+    .conhecimento:nth-child(4){
+        grid-column: 1 / 16;
+
+        grid-row: 7 / 8;
+    }
+    
+    .conhecimento:nth-child(5){
+        grid-column: 1 / 16;
+
+        grid-row: 9 / 10;
+    }
+    
+    .conhecimento:nth-child(6){
+        grid-column: 1 / 16;
+
+        grid-row: 11 / 13;
+    } 
+    .projetos{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .MCfotos{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    
+    .card{
+        margin: .8rem;
+
+    }
+    .sessao-contato{
+        width:100%;
+        height: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contato-wrapper{
+        width:100%;
+        height:20rem;
+        display: flex;
+        box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
+        
+    }
+    .contato-right{
+        width:100%;
+        text-align:start;
+    }
+    .contato-left{
+        width: 0;
+        display: none;
+    } 
+
+   
+    .sessao-contato h1{
+        width: 100%;
+        text-align: center;
+        font-family: var(--font-primary);
+        color: #272727;
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+    
+    .sessao-contato h3{
+        width: 100%;
+        display:block;
+        font-family: var(--font-primary);
+        color: #272727;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer{
+        width: 100%;
+        height: 7rem;
+        background-color: #262626;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content{
+        width: 60%;
+        display: inline;
+        justify-content: space-between;
+    }
+
+    .footer-content p{
+        font-family: var(--font-secundary);
+        color: #a7a7a7;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .social-list a{
+        margin: 0 2rem;
+        color: #a7a7a7;
+        font-size: 1.3rem;
+    }
+    .social-list ul{
+        display: flex;
+    }
+
+    #link-topo{
+        display: none;
+    }
+
 }
