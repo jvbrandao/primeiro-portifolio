@@ -1,14 +1,6 @@
-# portifolio
+# Portifólio pessoal
 
-Portifolio desenvolvedor.
+Desenvolvimento do meu primeiro portifólio
 
-## Tarefas
-
-O controle das tarefas do projeto será realizado no Github
-
-## Ícones
-
-- :package: nova funcionalidade
-- :up: atualização
-- :beetle: correção de bug
-- :checkered_flag: release
+## Acesso
+para acessar meu portifólio basta acessar https://jbrandao.site/
